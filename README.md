@@ -16,7 +16,7 @@ In the Home Lab you can use whichever Operating System (OS) you prefer. In this 
 
  These are the links for the Operating Systems that I'm using:
 
-Ubuntu: https://ubuntu.com/download/desktop
-Parrot OS: https://parrotsec.org/
+Ubuntu: https://ubuntu.com/download/desktop<br/>
+Parrot OS: https://parrotsec.org/<br/>
 
 Kali Linux (Although I didn't use it, in **CyberDojo**'s video he uses it to penetrate into Ubuntu's IP Address): https://www.kali.org/
