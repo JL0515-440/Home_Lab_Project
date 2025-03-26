@@ -28,7 +28,8 @@ Kali Linux (Although I didn't use it, in **CyberDojo**'s video he uses it to pen
 Once we finished downloading everything we need to set up our OSs in their respective VMs. 
 
 **Ubuntu Configuration**<br/>
-![image](https://github.com/user-attachments/assets/d78eac24-9857-436e-8eac-60db2ff662d8)<br/>
+![image](https://github.com/user-attachments/assets/ed29a510-d1df-4c25-921a-07906ad90b16)
+<br/>
 Storage: 25.00 GB<br/>
 
 **Parrot OS Configuration**<br/>
