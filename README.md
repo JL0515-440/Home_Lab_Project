@@ -8,8 +8,15 @@ I took inspiration from a lot of videos to do this project, as well as, some AI 
 (Original Creator of the video I took inspiration from and many of the steps I have done in the project)
 
 # Different Operating Systems and Virtual Machines
-In this project I was using **Virtual Box** which is one of the most used VMs besides VMware. 
+In this project I was using **Virtual Box** which is one of the most used VMs besides VMware. Here is the link of the website https://www.virtualbox.org/ I liked this VM because is free and it's easy to use if you don't know too much about Virtualization.
 
-Here is the link of the website https://www.virtualbox.org/ I liked this VM because is free and it's easy to use if you don't know too much about Virtualization.
+## Linux Operating Systems
 
-## eee
+In the Home Lab you can use whichever Operating System (OS) you prefer. In this Home Lab we are using **Ubuntu** and **Parrot OS (in this case the security version)**. Both are Linux Operating Systems which are used for different purposes. Ubuntu being as a one of the best options for general uses that an OS could have, as well as, being extremely light-weight, and Parrot OS - Security Version is an Operating System that has multiple tools from all the fields such as: Programming, Data Analysis, and Cybersecurity.
+
+ These are the links for the Operating Systems that I'm using:
+
+Ubuntu: https://ubuntu.com/download/desktop
+Parrot OS: https://parrotsec.org/
+
+Kali Linux (Although I didn't use it, in **CyberDojo**'s video he uses it to penetrate into Ubuntu's IP Address): https://www.kali.org/
