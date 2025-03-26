@@ -25,7 +25,11 @@ Kali Linux (Although I didn't use it, in **CyberDojo**'s video he uses it to pen
 
 ## Installing the OS in their respective VMs
 
-Once we finished downloading everything we need to set up our OSs in their respective VMs. 
+Once we finished downloading everything we need to set up our OSs in their respective VMs. We need to select the right .iso file, so that way the VMs can create a connection and then start using them.
+
+## Configuration of each OS, and the creation of the NAT Network
+
+This is the configuration of each OS that I decided to use in order to make them run, and be able to work as much as possible. 
 
 **Ubuntu Configuration**<br/>
 ![image](https://github.com/user-attachments/assets/ed29a510-d1df-4c25-921a-07906ad90b16)
@@ -33,6 +37,29 @@ Once we finished downloading everything we need to set up our OSs in their respe
 Storage: 25.00 GB<br/>
 
 **Parrot OS Configuration**<br/>
+![image](https://github.com/user-attachments/assets/ed29a510-d1df-4c25-921a-07906ad90b16)
+<br/>
+Storage: 25:00 HB<br/>
+
+(Yes, it the same configuration for some reason when I tried to add or substract more from each VM it had some issues, that's why I tried to do the same configuration for all of them.)
+
+Once we have all the OS already created and configurated we need to stablish a NAT Network that would allow us to work with both VMs together. 
+
+## Stablishing the NAT Network
+
+**THIS STEP IS HIGHLY IMPORTANT BECAUSE WITHOUT THE CREATION OF OUR OWN NAT NETWORK WE COULD AFFECT ANY OTHER EXTERNAL MACHINE AND THAT WOULD INVOLVE A MAJOR ISSUE ON OUR HOME LAB. AS WELL AS A POTENTIAL LEGAL RISK IF WE DO NOT SECURE THIS**
+
+We go to "Tools" all the way in the left top, and then we select the option called "Network". After that we go to "Nat Network" and then we create a new Nat Network you can call it whichever name you find more attractive to you.
+
+![image](https://github.com/user-attachments/assets/5a02f1cd-6204-42f6-8b31-bbb6f061ebb2)<br/>
+
+(I created one called "Home_Lab_Cybersecurity_Network" just for reference)
+
+
+## Update & download of essential tools
+
+After having the VMs already setted up we must check if the OS have their systems updated and with all the necessary tools for our activities. Using the following command: 
+ 
 
 
 
