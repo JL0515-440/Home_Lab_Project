@@ -1,5 +1,5 @@
 # Home Lab Project
-This Repository is being made by me (MTHD), because I wanted to do research regarding on how some Cybersecurity "Penetration testing" Tools work. By doing this I'm creating a personal network so that way I do not affect my own machine, and any other external device.
+This Repository is being made by me (JL0515-440), because I wanted to do research regarding on how some Cybersecurity "Penetration testing" Tools work. By doing this I'm creating a personal network so that way I do not affect my own machine, and any other external device.
 
 I took inspiration from a lot of videos to do this project, as well as, some AI (ChatGPT and Gemini) bots to research ideas, but the one that encouraged me to do this project was this one in Youtube: 
 
@@ -20,3 +20,18 @@ Ubuntu: https://ubuntu.com/download/desktop<br/>
 Parrot OS: https://parrotsec.org/<br/>
 
 Kali Linux (Although I didn't use it, in **CyberDojo**'s video he uses it to penetrate into Ubuntu's IP Address): https://www.kali.org/
+
+# Setting Up the VMs
+
+## Installing the OS in their respective VMs
+
+Once we finished downloading everything we need to set up our OSs in their respective VMs. 
+
+**Ubuntu Configuration**<br/>
+![image](https://github.com/user-attachments/assets/d78eac24-9857-436e-8eac-60db2ff662d8)<br/>
+Storage: 25.00 GB<br/>
+
+**Parrot OS Configuration**<br/>
+
+
+
