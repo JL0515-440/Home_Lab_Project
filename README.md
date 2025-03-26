@@ -62,8 +62,11 @@ After having the VMs already setted up we must check if the OS have their system
 ```bash
 sudo apt update && sudo apt upgrade -y
 ``` 
-On each terminal (in this case Parrot OS & Ubuntu) so that way we can update and upgrade our OSs. Now for Ubuntu's case, I'm going to use the next command to install the essential tools that we will use for our Home Lab.
-
+On each terminal (in this case Parrot OS & Ubuntu) so that way we can update and upgrade our OSs. I'm going to use the next command to install the essential tools that we will use for our Home Lab.
 ```bash
-sudo apt install -y build essential git wget```
+sudo apt install -y build essential git wget
+```
+# Simulate an Attack
+
+Now we are going to simulate an Attack using Nmap (An app that scans the IP Adress from any device)
 
