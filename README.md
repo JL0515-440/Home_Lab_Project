@@ -59,7 +59,11 @@ We go to "Tools" all the way in the left top, and then we select the option call
 ## Update & download of essential tools
 
 After having the VMs already setted up we must check if the OS have their systems updated and with all the necessary tools for our activities. Using the following command: 
- 
+```bash
+sudo apt update && sudo apt upgrade -y
+``` 
+On each terminal (in this case Parrot OS & Ubuntu) so that way we can update and upgrade our OSs. Now for Ubuntu's case, I'm going to use the next command to install the essential tools that we will use for our Home Lab.
 
-
+```bash
+sudo apt install -y build essential git wget```
 
