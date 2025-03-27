@@ -101,6 +101,23 @@ sudo ufw enable
 ```bash
 sudo ufw allow ssh
 ```
-This commands are for installing and enabling a firewall to deny the access of intruders. 
+These commands would create a defense for our systems that would regulate who ever tries to penetrate it. Finally, using the next command we would deny the access of our information (in this case our IP address). To do this we need the IP address of the attacker so that way we can deny the entrance to them (we can use the same command to see the IP address of the VM that is attacking).
 
-**I AM NOT RESPONSIBLE FROM ALL THE THINGS I HAVE SAID IN THIS REPOSITORY THIS IS A PROJECT FOR CYBERSECURITY TO TEST THE EFFICIENCY OF A HOME LAB. I DO NOT FOMENT ANY TYPE OF BEHAVIOR OR ANY TYPE MISSUSE OF ALL THE THINGS I HAVE BEEN REPORTING IN THIS REPOSITORY. ALL OF THIS DOCUMENTATION IT IS ONLY INTEND TO BE FOR EDUCATIONAL PURPOSES ONLY**
+```bash
+sudo ufw allow from "Attacker's IP address"
+```
+Now that we have this done we can check our VM's firewall status by doing the next command:
+```bash
+sudo ufw status
+``` 
+It should appear something like this: 
+
+![Screenshot 2025-03-26 222000](https://github.com/user-attachments/assets/a22dc867-691a-4702-b668-ef471a435e79)
+(Our IP address is the one that is all drawn in blue)
+
+# Analyzing The Network Traffic Of Our Home Lab
+To analyze the network traffic of our VM we just need to install Wireshark (An app that tracks all type of data that enters into our network, this is helpful to see if we are being targeted by any other hacking tool). By writing the next command we would be able to install wireshark in our Ubuntu VM.
+
+```bash
+sudo apt install wireshark
+```
