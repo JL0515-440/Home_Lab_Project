@@ -7,6 +7,8 @@ I took inspiration from a lot of videos to do this project, as well as, some AI 
 
 (Original Creator of the video I took inspiration from and many of the steps I have done in the project)
 
+**I AM NOT RESPONSIBLE FROM ALL THE THINGS I HAVE SAID IN THIS REPOSITORY THIS IS A PROJECT FOR CYBERSECURITY TO TEST THE EFFICIENCY OF A HOME LAB. I DO NOT FOMENT ANY TYPE OF BEHAVIOR OR ANY TYPE MISSUSE OF ALL THE THINGS I HAVE BEEN REPORTING IN THIS REPOSITORY. ALL OF THIS DOCUMENTATION IT IS ONLY INTEND TO BE FOR EDUCATIONAL PURPOSES ONLY**
+
 # Different Operating Systems and Virtual Machines
 In this project I was using **Virtual Box** which is one of the most used VMs besides VMware. Here is the link of the website https://www.virtualbox.org/ I liked this VM because is free and it's easy to use if you don't know too much about Virtualization.
 
@@ -66,7 +68,25 @@ On each terminal (in this case Parrot OS & Ubuntu) so that way we can update and
 ```bash
 sudo apt install -y build essential git wget
 ```
+After using this commands 
 # Simulate an Attack
 
-Now we are going to simulate an Attack using Nmap (An app that scans the IP Adress from any device)
+Now we are going to simulate an attack using Nmap (An app that scans the IP addresses from any device to search for any vulnerabilities). First we need to see know the IP address of our **Ubuntu VM** in order to perform the attack. by using the command:
+```bash
+ip a
+```
+We can see our IP address, from our VM. In this case our IP address is: ![Screenshot 2025-03-26 193621](https://github.com/user-attachments/assets/59d2ce2d-6fb9-448e-89f1-f65c7886330b) (All the blue drawing is information is not relevant, but still can be comprimising and the one that is in yellow is the IP address).
 
+After knowing the IP address we use the next command on the app Nmap, in our **Parrot OS** to track the address.
+```bash
+Nmap -A (IP address that we tracked)
+```
+After clicking enter a message just popped out saying this: <br/>
+![Screenshot 2025-03-26 200724](https://github.com/user-attachments/assets/65e66ca7-c2e1-47da-8737-ec9e1b542d58)
+(The one drawing in blue is Ubuntu's VM IP address)<br/>
+
+As you can see Nmap already scanned the IP address saying that there is 1 host up. It says how many times did scanned the address, where did the scan happened and how much time did it take to find a vulnerability.
+
+
+
+**I AM NOT RESPONSIBLE FROM ALL THE THINGS I HAVE SAID IN THIS REPOSITORY THIS IS A PROJECT FOR CYBERSECURITY TO TEST THE EFFICIENCY OF A HOME LAB. I DO NOT FOMENT ANY TYPE OF BEHAVIOR OR ANY TYPE MISSUSE OF ALL THE THINGS I HAVE BEEN REPORTING IN THIS REPOSITORY. ALL OF THIS DOCUMENTATION IT IS ONLY INTEND TO BE FOR EDUCATIONAL PURPOSES ONLY**
