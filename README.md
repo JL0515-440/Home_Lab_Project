@@ -75,7 +75,8 @@ Now we are going to simulate an attack using Nmap (An app that scans the IP addr
 ```bash
 ip a
 ```
-We can see our IP address, from our VM. In this case our IP address is: ![Screenshot 2025-03-26 193621](https://github.com/user-attachments/assets/59d2ce2d-6fb9-448e-89f1-f65c7886330b) (All the blue drawing is information is not relevant, but still can be comprimising and the one that is in yellow is the IP address).
+We can see our IP address, from our VM. In this case our IP address is: ![Screenshot 2025-03-26 193621](https://github.com/user-attachments/assets/59d2ce2d-6fb9-448e-89f1-f65c7886330b)<br/>
+(All the blue drawing is information is not relevant, but still can be comprimising and the one that is in yellow is the IP address).<br/>
 
 After knowing the IP address we use the next command on the app Nmap, in our **Parrot OS** to track the address.
 ```bash
@@ -83,7 +84,7 @@ Nmap -A (IP address that we tracked)
 ```
 After clicking enter a message will pop out saying this: 
 
-![Screenshot 2025-03-26 200724](https://github.com/user-attachments/assets/65e66ca7-c2e1-47da-8737-ec9e1b542d58)
+![Screenshot 2025-03-26 200724](https://github.com/user-attachments/assets/65e66ca7-c2e1-47da-8737-ec9e1b542d58)<br/>
 (The one drawing in blue is Ubuntu's VM IP address)<br/>
 
 As you can see Nmap already scanned the IP address saying that there is 1 host up. It says how many times did scanned the address, where did the scan happened and how much time did it take to find a vulnerability. That's how we perform an Attack using Nmap as a pentesting tool.
@@ -112,8 +113,8 @@ sudo ufw status
 ``` 
 It should appear something like this: 
 
-![Screenshot 2025-03-26 222000](https://github.com/user-attachments/assets/a22dc867-691a-4702-b668-ef471a435e79)
-(Our IP address is the one that is all drawn in blue)
+![Screenshot 2025-03-26 222000](https://github.com/user-attachments/assets/a22dc867-691a-4702-b668-ef471a435e79)<br/>
+(Our IP address is the one that is all drawn in blue)<br/>
 
 # Analyzing The Network Traffic Of Our Home Lab
 To analyze the network traffic of our VM we just need to install Wireshark (An app that tracks all type of data that enters into our network, this is helpful to see if we are being targeted by any other hacking tool). By writing the next command we would be able to install wireshark in our Ubuntu VM.
@@ -127,17 +128,19 @@ After installing Wireshark now we are going to be able to capture, as well as, a
 sudo wireshark
 ```
 After entering the command on the terminal, a window will pop out.
-![Screenshot 2025-03-27 092759](https://github.com/user-attachments/assets/b6711b84-ee6a-4399-8847-d87ad81530f5)
+![Screenshot 2025-03-27 092759](https://github.com/user-attachments/assets/b6711b84-ee6a-4399-8847-d87ad81530f5)<br/>
 
 We need to click the button "Capture" in order to begin the process of the Network Analysis. Once we clicked that button another window will pop out, to begin the process of capture network data we need to click the button that is all the way down that says "Start".
 
-![Screenshot 2025-03-27 093728](https://github.com/user-attachments/assets/a861bc9e-e772-49e9-93ad-0a46c56c4cd0)
+![Screenshot 2025-03-27 093728](https://github.com/user-attachments/assets/a861bc9e-e772-49e9-93ad-0a46c56c4cd0)<br/>
 
 After doing the program will run and now we can capture all the data that tries to penetrate our network. At this point we can repeat the attack to check if the program is doing all right.
-![image](https://github.com/user-attachments/assets/22790138-185b-49c1-a84f-1e4ce4c8ae2f)
+
+![image](https://github.com/user-attachments/assets/22790138-185b-49c1-a84f-1e4ce4c8ae2f)<br/>
 (Wireshark running in Ubuntu's VM without getting attacked by Parrot OS)
 
-![image](https://github.com/user-attachments/assets/9a096784-33ab-4aa6-be98-c4cf4f82e2a4)
+
+![image](https://github.com/user-attachments/assets/9a096784-33ab-4aa6-be98-c4cf4f82e2a4)<br/>
 (Wireshark running in Ubuntu's VM getting attacked by Nmap performed by Parrot OS)
 
 All of those numbers are the multiple ways Nmap tried to scanned the IP address of Ubuntu's VM and what is surprising is how much time did it take to Nmap to do all of those attacks to a single IP address. 
