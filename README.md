@@ -69,7 +69,7 @@ On each terminal (in this case Parrot OS & Ubuntu) so that way we can update and
 sudo apt install -y build essential git wget
 ```
 After using this commands 
-# Simulate an Attack
+# Simulate an Attack, and responding to it.
 
 Now we are going to simulate an attack using Nmap (An app that scans the IP addresses from any device to search for any vulnerabilities). First we need to see know the IP address of our **Ubuntu VM** in order to perform the attack. by using the command:
 ```bash
@@ -81,12 +81,26 @@ After knowing the IP address we use the next command on the app Nmap, in our **P
 ```bash
 Nmap -A (IP address that we tracked)
 ```
-After clicking enter a message just popped out saying this: <br/>
+After clicking enter a message just popped out saying this: 
+
 ![Screenshot 2025-03-26 200724](https://github.com/user-attachments/assets/65e66ca7-c2e1-47da-8737-ec9e1b542d58)
 (The one drawing in blue is Ubuntu's VM IP address)<br/>
 
-As you can see Nmap already scanned the IP address saying that there is 1 host up. It says how many times did scanned the address, where did the scan happened and how much time did it take to find a vulnerability.
+As you can see Nmap already scanned the IP address saying that there is 1 host up. It says how many times did scanned the address, where did the scan happened and how much time did it take to find a vulnerability. That's how we perform an Attack using Nmap as a pentesting tool.
 
+## Defending ourselves from the attack from our Ubuntu's VM
 
+To be able to defend ourselves or device we need to install a firewall by using the next commands:
+
+```bash
+sudo apt install ufw
+```
+```bash
+sudo ufw enable
+```
+```bash
+sudo ufw allow ssh
+```
+This commands are for installing and enabling a firewall to deny the access of intruders. 
 
 **I AM NOT RESPONSIBLE FROM ALL THE THINGS I HAVE SAID IN THIS REPOSITORY THIS IS A PROJECT FOR CYBERSECURITY TO TEST THE EFFICIENCY OF A HOME LAB. I DO NOT FOMENT ANY TYPE OF BEHAVIOR OR ANY TYPE MISSUSE OF ALL THE THINGS I HAVE BEEN REPORTING IN THIS REPOSITORY. ALL OF THIS DOCUMENTATION IT IS ONLY INTEND TO BE FOR EDUCATIONAL PURPOSES ONLY**
