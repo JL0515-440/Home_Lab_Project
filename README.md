@@ -1,5 +1,5 @@
 # Home Lab Project
-This Repository is being made by me (JL0515-440), because I wanted to do research regarding on how some Cybersecurity "Penetration testing" Tools work. By doing this I'm creating a personal network so that way I do not affect my own machine, and any other external device.
+This Repository is being made by me (JL0515-440), because I wanted to do research regarding on how some Cybersecurity "Penetration testing" Tools work, and how to defend my own machine against them. By doing this I'm creating a personal network so that way I do not affect my own machine, and any other external device.
 
 I took inspiration from a lot of videos to do this project, as well as, some AI (ChatGPT and Gemini) bots to research ideas, but the one that encouraged me to do this project was this one in Youtube: 
 
@@ -47,9 +47,10 @@ Storage: 25:00 HB<br/>
 
 Once we have all the OS already created and configurated we need to stablish a NAT Network that would allow us to work with both VMs together. 
 
-## Stablishing the NAT Network
+# Stablishing the NAT Network
 
-**THIS STEP IS HIGHLY IMPORTANT BECAUSE WITHOUT THE CREATION OF OUR OWN NAT NETWORK WE COULD AFFECT ANY OTHER EXTERNAL MACHINE AND THAT WOULD INVOLVE A MAJOR ISSUE ON OUR HOME LAB. AS WELL AS A POTENTIAL LEGAL RISK IF WE DO NOT SECURE THIS**
+**THIS STEP IS HIGHLY IMPORTANT BECAUSE WITHOUT THE CREATION OF OUR OWN NAT NETWORK WE COULD AFFECT ANY OTHER EXTERNAL MACHINE AND THAT WOULD INVOLVE A MAJOR ISSUE ON OUR HOME LAB. AS WELL AS A POTENTIAL LEGAL RISK IF WE DO NOT CREATE THE NAT NETWORK**
+(There are different types of methods to avoid this inconvenient, if you want to take a look I suggest to start a chat with any AI and it will tell you the best ways to avoid this inconvenient.)
 
 We go to "Tools" all the way in the left top, and then we select the option called "Network". After that we go to "Nat Network" and then we create a new Nat Network you can call it whichever name you find more attractive to you.
 
@@ -58,7 +59,7 @@ We go to "Tools" all the way in the left top, and then we select the option call
 (I created one called "Home_Lab_Cybersecurity_Network" just for reference)
 
 
-## Update & download of essential tools
+## Update & download of essential tools in our Operating Systems
 
 After having the VMs already setted up we must check if the OS have their systems updated and with all the necessary tools for our activities. Using the following command: 
 ```bash
@@ -68,7 +69,6 @@ On each terminal (in this case Parrot OS & Ubuntu) so that way we can update and
 ```bash
 sudo apt install -y build essential git wget
 ```
-After using this commands 
 # Simulate an Attack, and responding to it.
 
 Now we are going to simulate an attack using Nmap (An app that scans the IP addresses from any device to search for any vulnerabilities). First we need to see know the IP address of our **Ubuntu VM** in order to perform the attack. by using the command:
@@ -81,7 +81,7 @@ After knowing the IP address we use the next command on the app Nmap, in our **P
 ```bash
 Nmap -A (IP address that we tracked)
 ```
-After clicking enter a message just popped out saying this: 
+After clicking enter a message will pop out saying this: 
 
 ![Screenshot 2025-03-26 200724](https://github.com/user-attachments/assets/65e66ca7-c2e1-47da-8737-ec9e1b542d58)
 (The one drawing in blue is Ubuntu's VM IP address)<br/>
@@ -121,3 +121,31 @@ To analyze the network traffic of our VM we just need to install Wireshark (An a
 ```bash
 sudo apt install wireshark
 ```
+After installing Wireshark now we are going to be able to capture, as well as, analyze the data that our network receives in order to catch anyone who is trying to get access or penetrate it. Using the following command we can run the program **Wireshark**:
+
+```bash
+sudo wireshark
+```
+After entering the command on the terminal, a window will pop out.
+![Screenshot 2025-03-27 092759](https://github.com/user-attachments/assets/b6711b84-ee6a-4399-8847-d87ad81530f5)
+
+We need to click the button "Capture" in order to begin the process of the Network Analysis. Once we clicked that button another window will pop out, to begin the process of capture network data we need to click the button that is all the way down that says "Start".
+
+![Screenshot 2025-03-27 093728](https://github.com/user-attachments/assets/a861bc9e-e772-49e9-93ad-0a46c56c4cd0)
+
+After doing the program will run and now we can capture all the data that tries to penetrate our network. At this point we can repeat the attack to check if the program is doing all right.
+![image](https://github.com/user-attachments/assets/22790138-185b-49c1-a84f-1e4ce4c8ae2f)
+(Wireshark running in Ubuntu's VM without getting attacked by Parrot OS)
+
+![image](https://github.com/user-attachments/assets/9a096784-33ab-4aa6-be98-c4cf4f82e2a4)
+(Wireshark running in Ubuntu's VM getting attacked by Nmap performed by Parrot OS)
+
+All of those numbers are the multiple ways Nmap tried to scanned the IP address of Ubuntu's VM and what is surprising is how much time did it take to Nmap to do all of those attacks to a single IP address. 
+
+# Conclusion of the Project
+
+By doing this project we could notice how set up a home lab, a network that gives us the opportunity to analyze a variety of tools without getting exposed to any potential legal risk for trespassing any external device. In this project we analyzed how to set up our personal NAT network, how to install different Linux Operating Systems (Ubuntu and Parrot OS), as well installing and updating all of them. We also perform a Cyberattack in another device (Ubuntu's VM), and we defend ourselves by installing a firewall and a ssh to deny the access of the app Nmap (the one that we used to realize the cyberattack to the IP address of Ubuntu's VM). Lastly, we also installed an app (Wireshark) that allowed us to capture all the data that tried to harm our device.
+
+I hope this helps anyone to start their portfolio just like me. 
+
+
